@@ -39,3 +39,7 @@ block main
                   != list_categories(post.categories, {show_count: false, class: 'post-category', style: 'none', separator: '>'})
 
   include _partial/paginator.jade
+      hr
+      .container
+        p 可以留言新的信息哟~
+        include _partial/comments.jade
