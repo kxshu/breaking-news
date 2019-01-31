@@ -46,6 +46,23 @@ html
           google_ad_client: "#{theme.google_adsense_page_level_ads}",
           enable_page_level_ads: true
           });
+    
+    if theme.growingio
+      script.  
+        var _vds = _vds || [];
+        window._vds = _vds;
+        (function () {
+            _vds.push(['setAccountId', '8166460407667e71']);
+            (function () {
+                var vds = document.createElement('script');
+                vds.type = 'text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +
+                    'assets.growingio.com/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+        })();
 
   body
 
