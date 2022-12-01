@@ -1,3 +1,3 @@
 # breaking-news
 
-Please commit any pr.
+Please submit any pr.
