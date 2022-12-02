@@ -25,4 +25,4 @@ valine:
   appKey: U9YOzVvEcVmKMK8GbTsIp2P5 # Leancloud appKey
   notify: true # notify when getting replies(true/false)
   verify: true # captcha when post a comment(true/false)
-  placeholder: type here # placeholder text
+  placeholder: type here... # placeholder text
