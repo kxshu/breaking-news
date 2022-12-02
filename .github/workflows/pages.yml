@@ -28,7 +28,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: rebuild node-sass
-        run: npm rebuild node-sass
+        run: npm uninstall -g node-sass && npm install -g node-sass
       - name: Build
         # run: npm run build
         run: npx hexo generate
