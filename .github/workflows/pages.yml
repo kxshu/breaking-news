@@ -14,10 +14,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           # If your repository depends on submodule, please see: https://github.com/actions/checkout
           submodules: recursive
-      - name: Use Node.js 8.0.0
+      - name: Use Node.js 16.0.0
         uses: actions/setup-node@v3
         with:
-          node-version: '8.0.0'
+          node-version: '16'
       - name: Cache NPM dependencies
         uses: actions/cache@v3
         with:
@@ -28,7 +28,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: rebuild node-sass
-        run: npm uninstall -g node-sass && npm install -g node-sass@4.6.0
+        run: npm uninstall -g node-sass && npm install -g node-sass@6.0
       - name: Build
         # run: npm run build
         run: npx hexo generate
